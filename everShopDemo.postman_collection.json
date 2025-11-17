@@ -1,0 +1,781 @@
+{
+	"info": {
+		"_postman_id": "2d287cab-1934-4a69-9e85-f793ec1182b6",
+		"name": "everShopDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24757735"
+	},
+	"item": [
+		{
+			"name": "search-item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/search?keyword=Nike+react&ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Nike+react"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search-item",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.evershop.io/search?keyword=Nike+react&ajax=true",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "Nike+react"
+								},
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "4061"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 03:36:03 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fdd-Vm0UWIUlkSOTRDcIUpOny2wpdWU\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sid=s%3ADtldPRX4k1EwvNp_HW3M052t6_meFswV.LF8ar3sDCeL2YhtmAluOIvM9hITC5US6iuBSWPRW6sI; Path=/; Expires=Wed, 24 Sep 2025 03:36:03 GMT; HttpOnly"
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqamc\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqamd\": {\n                \"total\": 2,\n                \"currentFilters\": [\n                    {\n                        \"key\": \"keyword\",\n                        \"operation\": \"eq\",\n                        \"value\": \"Nike react\"\n                    },\n                    {\n                        \"key\": \"page\",\n                        \"operation\": \"eq\",\n                        \"value\": \"1\"\n                    },\n                    {\n                        \"key\": \"limit\",\n                        \"operation\": \"eq\",\n                        \"value\": \"20\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqamf\": {\n                \"items\": [\n                    {\n                        \"productId\": 171,\n                        \"name\": \"Nike react infinity run flyknit\",\n                        \"sku\": \"NJC44141-Purple-L\",\n                        \"price\": {\n                            \"regular\": {\n                                \"value\": 543,\n                                \"text\": \"$543.00\"\n                            },\n                            \"special\": {\n                                \"value\": 543,\n                                \"text\": \"$543.00\"\n                            }\n                        },\n                        \"image\": {\n                            \"alt\": \"Nike react infinity run flyknit\",\n                            \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-listing.png\"\n                        },\n                        \"url\": \"/nike-react-infinity-run-flyknit-171\"\n                    },\n                    {\n                        \"productId\": 160,\n                        \"name\": \"Nike odyssey react flyknit 2\",\n                        \"sku\": \"NJC93155-Pink-XL\",\n                        \"price\": {\n                            \"regular\": {\n                                \"value\": 857,\n                                \"text\": \"$857.00\"\n                            },\n                            \"special\": {\n                                \"value\": 857,\n                                \"text\": \"$857.00\"\n                            }\n                        },\n                        \"image\": {\n                            \"alt\": \"Nike odyssey react flyknit 2\",\n                            \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/1939/9584/plv6734-Pink-listing.png\"\n                        },\n                        \"url\": \"/women/nike-odyssey-react-flyknit-2-160\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqami\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqamj\": null,\n            \"e248uix4m5ibqamk\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Search results for: Nike react\",\n                        \"url\": \"https://demo.evershop.io/search?keyword=Nike+react&ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqaml\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqamm\": {\n                \"title\": \"Search results for: Nike react\",\n                \"description\": \"Search results for: Nike react\"\n            },\n            \"e248uix4m5ibqamn\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqamo\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqamp\": null,\n            \"e248uix4m5ibqamq\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqamr\": \"https://demo.evershop.io/account/login\",\n            \"e135l74vnmfw06fre\": {\n                \"menus\": [\n                    {\n                        \"id\": \"135l74vnmfw06fs9\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"135l74vnmfw06fsc\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqamc\"\n                }\n            ],\n            \"53a5c4e443c686e83ed07c4024cb9005\": [],\n            \"cd65308b660ab08acbf37587da8b8cec\": [\n                {\n                    \"origin\": \"products\",\n                    \"alias\": \"e248uix4m5ibqamd\"\n                }\n            ],\n            \"8258d32f10368fb12b468d1934c39e7c\": [\n                {\n                    \"origin\": \"products\",\n                    \"alias\": \"e248uix4m5ibqamf\"\n                }\n            ],\n            \"73803fc0a7d90e8e0ef8a16b1a64f089\": [],\n            \"8e6938817356c0764e16d9dc7d99d4d3\": [],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqami\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqamj\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqamk\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqaml\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqamm\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqamn\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqamo\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqamp\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqamq\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqamr\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqams\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqamw\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqan0\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e135l74vnmfw06fre\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "item-details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/nike-react-infinity-run-flyknit-171?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"nike-react-infinity-run-flyknit-171"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "item-details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.evershop.io/nike-react-infinity-run-flyknit-171?ajax=true",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"nike-react-infinity-run-flyknit-171"
+							],
+							"query": [
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "7337"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 03:54:15 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ca9-/ObQ6b4z05wjwcH0htCmPz9VOf0\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqb5x\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqb5y\": {\n                \"attributes\": [\n                    {\n                        \"attributeName\": \"Color\",\n                        \"attributeCode\": \"color\",\n                        \"optionText\": \"Purple\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb5z\": {\n                \"description\": [\n                    {\n                        \"id\": \"r__ca5a74f0-173f-4121-ad6c-c7d3f20d2a3b\",\n                        \"size\": 1,\n                        \"columns\": [\n                            {\n                                \"id\": \"c__37f38b5f-8a95-4222-8d13-e9cdedb37ccf\",\n                                \"size\": 1,\n                                \"data\": {\n                                    \"time\": 1725709014759,\n                                    \"blocks\": [\n                                        {\n                                            \"id\": \"mjUrCCjG7r\",\n                                            \"type\": \"paragraph\",\n                                            \"data\": {\n                                                \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat mi eget elit elementum, id pulvinar tellus eleifend.\"\n                                            }\n                                        },\n                                        {\n                                            \"id\": \"JKTM4rVnx9\",\n                                            \"type\": \"paragraph\",\n                                            \"data\": {\n                                                \"text\": \"Integer porttitor elit id euismod elementum. Nulla vel molestie massa, eget iaculis elit. Quisque a tortor vel lectus ultricies pretium quis non purus. Pellentesque molestie leo eget rutrum tristique.\"\n                                            }\n                                        }\n                                    ],\n                                    \"version\": \"2.30.2\"\n                                }\n                            }\n                        ]\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb60\": {\n                \"productId\": 171,\n                \"sku\": \"NJC44141-Purple-L\",\n                \"name\": \"Nike react infinity run flyknit\",\n                \"gallery\": [\n                    {\n                        \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1670/7826/plv6172-Purple-thumb.png\"\n                    }\n                ],\n                \"inventory\": {\n                    \"isInStock\": true\n                }\n            },\n            \"e248uix4m5ibqb61\": \"https://demo.evershop.io/api/cart/mine/items\",\n            \"e248uix4m5ibqb62\": {\n                \"name\": \"Nike react infinity run flyknit\",\n                \"sku\": \"NJC44141-Purple-L\",\n                \"price\": {\n                    \"regular\": {\n                        \"value\": 543,\n                        \"text\": \"$543.00\"\n                    },\n                    \"special\": {\n                        \"value\": 543,\n                        \"text\": \"$543.00\"\n                    }\n                }\n            },\n            \"e248uix4m5ibqb63\": {\n                \"uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n                \"image\": {\n                    \"alt\": \"Nike react infinity run flyknit\",\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n                    \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-single.png\"\n                },\n                \"gallery\": [\n                    {\n                        \"alt\": \"Nike react infinity run flyknit\",\n                        \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1670/7826/plv6172-Purple-thumb.png\",\n                        \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/1670/7826/plv6172-Purple-single.png\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb64\": {\n                \"options\": []\n            },\n            \"e248uix4m5ibqb65\": {\n                \"url\": \"https://demo.evershop.io/nike-react-infinity-run-flyknit-171?ajax=true\"\n            },\n            \"e248uix4m5ibqb66\": {\n                \"variantGroup\": {\n                    \"variantAttributes\": [\n                        {\n                            \"attributeId\": 2,\n                            \"attributeCode\": \"size\",\n                            \"attributeName\": \"Size\",\n                            \"options\": [\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 172\n                                },\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 170\n                                },\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 176\n                                },\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 174\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 169\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 175\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 173\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 171\n                                }\n                            ]\n                        },\n                        {\n                            \"attributeId\": 3,\n                            \"attributeCode\": \"color\",\n                            \"attributeName\": \"Color\",\n                            \"options\": [\n                                {\n                                    \"optionId\": 14,\n                                    \"optionText\": \"Black\",\n                                    \"productId\": 175\n                                },\n                                {\n                                    \"optionId\": 14,\n                                    \"optionText\": \"Black\",\n                                    \"productId\": 176\n                                },\n                                {\n                                    \"optionId\": 17,\n                                    \"optionText\": \"Green\",\n                                    \"productId\": 170\n                                },\n                                {\n                                    \"optionId\": 17,\n                                    \"optionText\": \"Green\",\n                                    \"productId\": 169\n                                },\n                                {\n                                    \"optionId\": 19,\n                                    \"optionText\": \"Pink\",\n                                    \"productId\": 174\n                                },\n                                {\n                                    \"optionId\": 19,\n                                    \"optionText\": \"Pink\",\n                                    \"productId\": 173\n                                },\n                                {\n                                    \"optionId\": 27,\n                                    \"optionText\": \"Purple\",\n                                    \"productId\": 172\n                                },\n                                {\n                                    \"optionId\": 27,\n                                    \"optionText\": \"Purple\",\n                                    \"productId\": 171\n                                }\n                            ]\n                        }\n                    ],\n                    \"items\": [\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 27\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 17\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 14\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 19\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 17\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 14\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 19\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 27\n                                }\n                            ]\n                        }\n                    ]\n                }\n            },\n            \"e248uix4m5ibqb67\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqb68\": null,\n            \"e248uix4m5ibqb69\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Nike React Infinity Run Flyknit\",\n                        \"url\": \"https://demo.evershop.io/nike-react-infinity-run-flyknit-171?ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb6a\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqb6b\": {\n                \"title\": \"Nike React Infinity Run Flyknit\",\n                \"description\": \"Nike React Infinity Run Flyknit\"\n            },\n            \"e248uix4m5ibqb6c\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqb6d\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqb6e\": null,\n            \"e248uix4m5ibqb6f\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqb6g\": \"https://demo.evershop.io/account/login\",\n            \"e135l74vnmfw0tu9r\": {\n                \"menus\": [\n                    {\n                        \"id\": \"135l74vnmfw0tua6\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"135l74vnmfw0tua9\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqb5x\"\n                }\n            ],\n            \"e4ab3d4f0ea86bebb04629f56c069e9c\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb5y\"\n                }\n            ],\n            \"46cb417b95efad524a67c4615875e035\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb5z\"\n                }\n            ],\n            \"caa37b6d744f967065b272cca5eeb693\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb60\"\n                },\n                {\n                    \"origin\": \"action\",\n                    \"alias\": \"e248uix4m5ibqb61\"\n                }\n            ],\n            \"4dbbd952ec9ff5ae3bd84215fe3ed686\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb62\"\n                }\n            ],\n            \"402857eef7671c118012f69fe210a450\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb63\"\n                }\n            ],\n            \"efafb36000c919a9834ec55ad7efb2b8\": [],\n            \"1e2019d92b8e09581963626092648138\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb64\"\n                }\n            ],\n            \"98f1ff6c860c91055b77df1c8219ccaa\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb65\"\n                },\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb66\"\n                }\n            ],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqb67\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb68\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb69\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6a\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb6b\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6c\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6d\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqb6e\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqb6f\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqb6g\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqb6h\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqb6l\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqb6p\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e135l74vnmfw0tu9r\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "item-details-more",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/nike-react-infinity-run-flyknit-171?size=5&color=19&ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"nike-react-infinity-run-flyknit-171"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "color",
+							"value": "19"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "item-details-more",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.evershop.io/nike-react-infinity-run-flyknit-171?size=5&color=19&ajax=true",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"nike-react-infinity-run-flyknit-171"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "color",
+									"value": "19"
+								},
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "7369"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 03:57:11 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1cc9-b5mnGEdpsdcvrx6Qby6Ed42tehI\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqb5x\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqb5y\": {\n                \"attributes\": [\n                    {\n                        \"attributeName\": \"Color\",\n                        \"attributeCode\": \"color\",\n                        \"optionText\": \"Purple\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb5z\": {\n                \"description\": [\n                    {\n                        \"id\": \"r__ca5a74f0-173f-4121-ad6c-c7d3f20d2a3b\",\n                        \"size\": 1,\n                        \"columns\": [\n                            {\n                                \"id\": \"c__37f38b5f-8a95-4222-8d13-e9cdedb37ccf\",\n                                \"size\": 1,\n                                \"data\": {\n                                    \"time\": 1725709014759,\n                                    \"blocks\": [\n                                        {\n                                            \"id\": \"mjUrCCjG7r\",\n                                            \"type\": \"paragraph\",\n                                            \"data\": {\n                                                \"text\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat mi eget elit elementum, id pulvinar tellus eleifend.\"\n                                            }\n                                        },\n                                        {\n                                            \"id\": \"JKTM4rVnx9\",\n                                            \"type\": \"paragraph\",\n                                            \"data\": {\n                                                \"text\": \"Integer porttitor elit id euismod elementum. Nulla vel molestie massa, eget iaculis elit. Quisque a tortor vel lectus ultricies pretium quis non purus. Pellentesque molestie leo eget rutrum tristique.\"\n                                            }\n                                        }\n                                    ],\n                                    \"version\": \"2.30.2\"\n                                }\n                            }\n                        ]\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb60\": {\n                \"productId\": 171,\n                \"sku\": \"NJC44141-Purple-L\",\n                \"name\": \"Nike react infinity run flyknit\",\n                \"gallery\": [\n                    {\n                        \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1670/7826/plv6172-Purple-thumb.png\"\n                    }\n                ],\n                \"inventory\": {\n                    \"isInStock\": true\n                }\n            },\n            \"e248uix4m5ibqb61\": \"https://demo.evershop.io/api/cart/mine/items\",\n            \"e248uix4m5ibqb62\": {\n                \"name\": \"Nike react infinity run flyknit\",\n                \"sku\": \"NJC44141-Purple-L\",\n                \"price\": {\n                    \"regular\": {\n                        \"value\": 543,\n                        \"text\": \"$543.00\"\n                    },\n                    \"special\": {\n                        \"value\": 543,\n                        \"text\": \"$543.00\"\n                    }\n                }\n            },\n            \"e248uix4m5ibqb63\": {\n                \"uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n                \"image\": {\n                    \"alt\": \"Nike react infinity run flyknit\",\n                    \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n                    \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-single.png\"\n                },\n                \"gallery\": [\n                    {\n                        \"alt\": \"Nike react infinity run flyknit\",\n                        \"thumb\": \"https://demositefiles.blob.core.windows.net/images/catalog/1670/7826/plv6172-Purple-thumb.png\",\n                        \"single\": \"https://demositefiles.blob.core.windows.net/images/catalog/1670/7826/plv6172-Purple-single.png\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb64\": {\n                \"options\": []\n            },\n            \"e248uix4m5ibqb65\": {\n                \"url\": \"https://demo.evershop.io/nike-react-infinity-run-flyknit-171?size=5&color=19&ajax=true\"\n            },\n            \"e248uix4m5ibqb66\": {\n                \"variantGroup\": {\n                    \"variantAttributes\": [\n                        {\n                            \"attributeId\": 2,\n                            \"attributeCode\": \"size\",\n                            \"attributeName\": \"Size\",\n                            \"options\": [\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 172\n                                },\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 170\n                                },\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 176\n                                },\n                                {\n                                    \"optionId\": 5,\n                                    \"optionText\": \"M\",\n                                    \"productId\": 174\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 169\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 175\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 173\n                                },\n                                {\n                                    \"optionId\": 6,\n                                    \"optionText\": \"L\",\n                                    \"productId\": 171\n                                }\n                            ]\n                        },\n                        {\n                            \"attributeId\": 3,\n                            \"attributeCode\": \"color\",\n                            \"attributeName\": \"Color\",\n                            \"options\": [\n                                {\n                                    \"optionId\": 14,\n                                    \"optionText\": \"Black\",\n                                    \"productId\": 175\n                                },\n                                {\n                                    \"optionId\": 14,\n                                    \"optionText\": \"Black\",\n                                    \"productId\": 176\n                                },\n                                {\n                                    \"optionId\": 17,\n                                    \"optionText\": \"Green\",\n                                    \"productId\": 170\n                                },\n                                {\n                                    \"optionId\": 17,\n                                    \"optionText\": \"Green\",\n                                    \"productId\": 169\n                                },\n                                {\n                                    \"optionId\": 19,\n                                    \"optionText\": \"Pink\",\n                                    \"productId\": 174\n                                },\n                                {\n                                    \"optionId\": 19,\n                                    \"optionText\": \"Pink\",\n                                    \"productId\": 173\n                                },\n                                {\n                                    \"optionId\": 27,\n                                    \"optionText\": \"Purple\",\n                                    \"productId\": 172\n                                },\n                                {\n                                    \"optionId\": 27,\n                                    \"optionText\": \"Purple\",\n                                    \"productId\": 171\n                                }\n                            ]\n                        }\n                    ],\n                    \"items\": [\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 27\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 17\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 14\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 5\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 19\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 17\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 14\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 19\n                                }\n                            ]\n                        },\n                        {\n                            \"attributes\": [\n                                {\n                                    \"attributeCode\": \"size\",\n                                    \"optionId\": 6\n                                },\n                                {\n                                    \"attributeCode\": \"color\",\n                                    \"optionId\": 27\n                                }\n                            ]\n                        }\n                    ]\n                }\n            },\n            \"e248uix4m5ibqb67\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqb68\": null,\n            \"e248uix4m5ibqb69\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Nike React Infinity Run Flyknit\",\n                        \"url\": \"https://demo.evershop.io/nike-react-infinity-run-flyknit-171?size=5&color=19&ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb6a\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqb6b\": {\n                \"title\": \"Nike React Infinity Run Flyknit\",\n                \"description\": \"Nike React Infinity Run Flyknit\"\n            },\n            \"e248uix4m5ibqb6c\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqb6d\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqb6e\": null,\n            \"e248uix4m5ibqb6f\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqb6g\": \"https://demo.evershop.io/account/login\",\n            \"e135l74vnmfw0xmgi\": {\n                \"menus\": [\n                    {\n                        \"id\": \"135l74vnmfw0xmh7\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"135l74vnmfw0xmha\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqb5x\"\n                }\n            ],\n            \"e4ab3d4f0ea86bebb04629f56c069e9c\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb5y\"\n                }\n            ],\n            \"46cb417b95efad524a67c4615875e035\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb5z\"\n                }\n            ],\n            \"caa37b6d744f967065b272cca5eeb693\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb60\"\n                },\n                {\n                    \"origin\": \"action\",\n                    \"alias\": \"e248uix4m5ibqb61\"\n                }\n            ],\n            \"4dbbd952ec9ff5ae3bd84215fe3ed686\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb62\"\n                }\n            ],\n            \"402857eef7671c118012f69fe210a450\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb63\"\n                }\n            ],\n            \"efafb36000c919a9834ec55ad7efb2b8\": [],\n            \"1e2019d92b8e09581963626092648138\": [\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb64\"\n                }\n            ],\n            \"98f1ff6c860c91055b77df1c8219ccaa\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb65\"\n                },\n                {\n                    \"origin\": \"product\",\n                    \"alias\": \"e248uix4m5ibqb66\"\n                }\n            ],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqb67\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb68\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb69\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6a\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb6b\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6c\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb6d\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqb6e\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqb6f\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqb6g\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqb6h\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqb6l\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqb6p\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e135l74vnmfw0xmgi\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"NJC44141-Purple-L\",\r\n    \"qty\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/mine/items?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cart",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"NJC44141-Purple-L\",\r\n    \"qty\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.evershop.io/api/cart/mine/items?ajax=true",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"api",
+								"cart",
+								"mine",
+								"items"
+							],
+							"query": [
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "2915"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 04:06:38 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b63-Z/56QQ7b3+Dc4P1i/p2wFokKozM\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqbkt\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqbku\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqbkv\": null,\n            \"e248uix4m5ibqbkw\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Not found\",\n                        \"url\": \"https://demo.evershop.io/api/cart/mine/items?ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqbkx\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqbky\": {\n                \"title\": \"Not found\",\n                \"description\": \"Not found\"\n            },\n            \"e248uix4m5ibqbkz\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqbl0\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqbl1\": \"https://demo.evershop.io/\",\n            \"e248uix4m5ibqbl2\": null,\n            \"e248uix4m5ibqbl3\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqbl4\": \"https://demo.evershop.io/account/login\",\n            \"e135l74vnmfw19rvm\": {\n                \"menus\": [\n                    {\n                        \"id\": \"135l74vnmfw19rvr\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"135l74vnmfw19rvu\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqbkt\"\n                }\n            ],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqbku\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqbkv\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqbkw\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqbkx\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqbky\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqbkz\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqbl0\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"52eeddcfff6fbe3b853ba32a42a93e82\": [],\n            \"203a19f62a10f9c6b049edff2c63595e\": [\n                {\n                    \"origin\": \"continueShoppingUrl\",\n                    \"alias\": \"e248uix4m5ibqbl1\"\n                }\n            ],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqbl2\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqbl3\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqbl4\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqbl5\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqbl9\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqbld\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e135l74vnmfw19rvm\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "view-cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/cart?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view-cart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.evershop.io/cart?ajax=true",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"cart"
+							],
+							"query": [
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "3343"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 04:07:29 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d0f-f8Uu4hCDebeUaHhRDzjjs+YbrXY\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"eContext\": {\n        \"graphqlResponse\": {\n            \"e248uix4m5ibqb7v\": \"https://demo.evershop.io/search\",\n            \"e248uix4m5ibqb7w\": \"https://demo.evershop.io/cart\",\n            \"e248uix4m5ibqb7x\": null,\n            \"e248uix4m5ibqb7y\": null,\n            \"e248uix4m5ibqb7z\": {\n                \"priceIncludingTax\": true\n            },\n            \"e248uix4m5ibqb80\": null,\n            \"e248uix4m5ibqb81\": {\n                \"priceIncludingTax\": true\n            },\n            \"e248uix4m5ibqb82\": \"https://demo.evershop.io/checkout\",\n            \"e248uix4m5ibqb83\": {\n                \"breadcrumbs\": [\n                    {\n                        \"title\": \"Home\",\n                        \"url\": \"/\"\n                    },\n                    {\n                        \"title\": \"Shopping cart\",\n                        \"url\": \"https://demo.evershop.io/cart?ajax=true\"\n                    }\n                ]\n            },\n            \"e248uix4m5ibqb84\": {\n                \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n            },\n            \"e248uix4m5ibqb85\": {\n                \"title\": \"Shopping cart\",\n                \"description\": \"Shopping cart\"\n            },\n            \"e248uix4m5ibqb86\": {\n                \"headTags\": {\n                    \"metas\": [\n                        {\n                            \"name\": \"robots\",\n                            \"content\": \"noindex\",\n                            \"charSet\": null,\n                            \"httpEquiv\": null,\n                            \"property\": null,\n                            \"itemProp\": null,\n                            \"itemType\": null,\n                            \"itemID\": null,\n                            \"lang\": null\n                        }\n                    ],\n                    \"links\": [],\n                    \"scripts\": [],\n                    \"base\": null\n                }\n            },\n            \"e248uix4m5ibqb87\": {\n                \"logo\": {\n                    \"src\": null,\n                    \"alt\": null,\n                    \"width\": null,\n                    \"height\": null\n                }\n            },\n            \"e248uix4m5ibqb88\": null,\n            \"e248uix4m5ibqb89\": \"https://demo.evershop.io/account\",\n            \"e248uix4m5ibqb8a\": \"https://demo.evershop.io/account/login\",\n            \"e248uix4m5ibqb8b\": null,\n            \"e135l74vnmfw1avg7\": {\n                \"menus\": [\n                    {\n                        \"id\": \"135l74vnmfw1avgk\",\n                        \"name\": \"Shop ❤️\",\n                        \"url\": \"javascript:void(0)\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"javascript:void(0)\",\n                        \"children\": [\n                            {\n                                \"name\": \"Men\",\n                                \"url\": \"/men\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/men\"\n                            },\n                            {\n                                \"name\": \"Women\",\n                                \"url\": \"/women\",\n                                \"type\": \"custom\",\n                                \"uuid\": \"/women\"\n                            }\n                        ]\n                    },\n                    {\n                        \"id\": \"135l74vnmfw1avgn\",\n                        \"name\": \"About us\",\n                        \"url\": \"/page/about-us\",\n                        \"type\": \"custom\",\n                        \"uuid\": \"/page/about-us\",\n                        \"children\": []\n                    }\n                ],\n                \"isMain\": true,\n                \"className\": \"\"\n            }\n        },\n        \"propsMap\": {\n            \"137dcfd8bf7950dd6201684efdcb40a1\": [\n                {\n                    \"origin\": \"searchPageUrl\",\n                    \"alias\": \"e248uix4m5ibqb7v\"\n                }\n            ],\n            \"5248a628c0ba0eb2edc726fbc70778f8\": [\n                {\n                    \"origin\": \"cartUrl\",\n                    \"alias\": \"e248uix4m5ibqb7w\"\n                },\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb7x\"\n                }\n            ],\n            \"87b5a6343580ffba5d3cd5dcf3da9b15\": [\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb7y\"\n                },\n                {\n                    \"origin\": \"setting\",\n                    \"alias\": \"e248uix4m5ibqb7z\"\n                }\n            ],\n            \"0970d39aae36909e09c0cbec65369c02\": [\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb80\"\n                },\n                {\n                    \"origin\": \"setting\",\n                    \"alias\": \"e248uix4m5ibqb81\"\n                },\n                {\n                    \"origin\": \"checkoutUrl\",\n                    \"alias\": \"e248uix4m5ibqb82\"\n                }\n            ],\n            \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb83\"\n                }\n            ],\n            \"03ce62a99b643c53cea33f6fc2c573f5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb84\"\n                }\n            ],\n            \"170528765f0295e4db900fd92ea387bc\": [\n                {\n                    \"origin\": \"pageInfo\",\n                    \"alias\": \"e248uix4m5ibqb85\"\n                },\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb86\"\n                }\n            ],\n            \"2aa0bf53e05360bd37f2dd0982998263\": [],\n            \"a20b83833c6ae10ded5077b0943cfef5\": [\n                {\n                    \"origin\": \"themeConfig\",\n                    \"alias\": \"e248uix4m5ibqb87\"\n                }\n            ],\n            \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n            \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n                {\n                    \"origin\": \"customer\",\n                    \"alias\": \"e248uix4m5ibqb88\"\n                },\n                {\n                    \"origin\": \"accountUrl\",\n                    \"alias\": \"e248uix4m5ibqb89\"\n                },\n                {\n                    \"origin\": \"loginUrl\",\n                    \"alias\": \"e248uix4m5ibqb8a\"\n                }\n            ],\n            \"8bdf6e07d5f321c363037c0ecd754c6d\": [\n                {\n                    \"origin\": \"cart\",\n                    \"alias\": \"e248uix4m5ibqb8b\"\n                }\n            ],\n            \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n                {\n                    \"origin\": \"collection\",\n                    \"alias\": \"e248uix4m5ibqb8c\"\n                }\n            ],\n            \"78d4735155d485f34d387c8394613fb7\": [\n                {\n                    \"origin\": \"textWidget\",\n                    \"alias\": \"e248uix4m5ibqb8g\"\n                }\n            ],\n            \"d71e8a0220472a4a5360ae305aa98d5b\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e248uix4m5ibqb8k\"\n                }\n            ],\n            \"e9869af9cb99540caac4704f0a1d6de86\": [\n                {\n                    \"origin\": \"basicMenuWidget\",\n                    \"alias\": \"e135l74vnmfw1avg7\"\n                }\n            ]\n        },\n        \"widgets\": [\n            {\n                \"sortOrder\": 1,\n                \"areaId\": [\n                    \"header\"\n                ],\n                \"type\": \"basic_menu\",\n                \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n            }\n        ],\n        \"notifications\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update-cart",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qty\": 3,\r\n    \"action\": \"increase\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/130f241b-60e9-42ee-87e0-c3b8822d13c1/items/95b6793f-416b-4c2c-a851-80371b1ecd58",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"130f241b-60e9-42ee-87e0-c3b8822d13c1",
+						"items",
+						"95b6793f-416b-4c2c-a851-80371b1ecd58"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update-cart",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"qty\": 2,\r\n    \"action\": \"increase\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.evershop.io//api/cart/f8bf88cf-3a24-4054-9ec8-cd2889f9b99d/items/a649ab8b-372e-41f1-b7ae-011a5cd66f5f",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"",
+								"api",
+								"cart",
+								"f8bf88cf-3a24-4054-9ec8-cd2889f9b99d",
+								"items",
+								"a649ab8b-372e-41f1-b7ae-011a5cd66f5f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1214"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 05:17:36 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4be-NE9bdH7Zbs7ld+ESLe5X/QLxVPw\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"item\": {\n            \"cart_item_id\": 98715,\n            \"uuid\": \"95b6793f-416b-4c2c-a851-80371b1ecd58\",\n            \"cart_id\": 83163,\n            \"product_id\": 171,\n            \"productUrl\": \"/nike-react-infinity-run-flyknit-171\",\n            \"product_uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n            \"product_sku\": \"NJC44141-Purple-L\",\n            \"group_id\": 1,\n            \"category_id\": null,\n            \"product_name\": \"Nike react infinity run flyknit\",\n            \"thumbnail\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n            \"product_weight\": 9.4,\n            \"tax_class_id\": 1,\n            \"qty\": 13,\n            \"variant_group_id\": 100,\n            \"variant_options\": \"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\n            \"removeUrl\": \"/api/cart/mine/items/95b6793f-416b-4c2c-a851-80371b1ecd58\",\n            \"tax_percent\": 0,\n            \"product_price\": 543,\n            \"product_price_incl_tax\": 543,\n            \"tax_amount_before_discount\": 0,\n            \"final_price\": 543,\n            \"final_price_incl_tax\": 543,\n            \"line_total\": 7059,\n            \"line_total_incl_tax\": 7059,\n            \"discount_amount\": 0,\n            \"tax_amount\": 0,\n            \"line_total_with_discount\": 7059,\n            \"line_total_with_discount_incl_tax\": 7059,\n            \"errors\": {}\n        },\n        \"count\": 1,\n        \"cartId\": \"130f241b-60e9-42ee-87e0-c3b8822d13c1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/130f241b-60e9-42ee-87e0-c3b8822d13c1/items/95b6793f-416b-4c2c-a851-80371b1ecd58",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"130f241b-60e9-42ee-87e0-c3b8822d13c1",
+						"items",
+						"95b6793f-416b-4c2c-a851-80371b1ecd58"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete-request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://demo.evershop.io/api/cart/130f241b-60e9-42ee-87e0-c3b8822d13c1/items/95b6793f-416b-4c2c-a851-80371b1ecd58",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"evershop",
+								"io"
+							],
+							"path": [
+								"api",
+								"cart",
+								"130f241b-60e9-42ee-87e0-c3b8822d13c1",
+								"items",
+								"95b6793f-416b-4c2c-a851-80371b1ecd58"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1160"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Sep 2025 05:28:41 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"488-piBx+JNcYgto9BdhBrDciqKyEIs\""
+						},
+						{
+							"key": "request-context",
+							"value": "appId=cid-v1:"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"item\": {\n            \"cart_item_id\": 98715,\n            \"uuid\": \"95b6793f-416b-4c2c-a851-80371b1ecd58\",\n            \"cart_id\": 83163,\n            \"product_id\": 171,\n            \"productUrl\": \"/nike-react-infinity-run-flyknit-171\",\n            \"product_uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n            \"product_sku\": \"NJC44141-Purple-L\",\n            \"group_id\": 1,\n            \"category_id\": null,\n            \"product_name\": \"Nike react infinity run flyknit\",\n            \"thumbnail\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n            \"product_weight\": 9.4,\n            \"tax_class_id\": 1,\n            \"qty\": 22,\n            \"variant_group_id\": 100,\n            \"variant_options\": \"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\n            \"removeUrl\": \"/api/cart/mine/items/95b6793f-416b-4c2c-a851-80371b1ecd58\",\n            \"tax_percent\": 0,\n            \"product_price\": 543,\n            \"product_price_incl_tax\": 543,\n            \"tax_amount_before_discount\": 0,\n            \"final_price\": 543,\n            \"final_price_incl_tax\": 543,\n            \"line_total\": 11946,\n            \"line_total_incl_tax\": 11946,\n            \"discount_amount\": 0,\n            \"tax_amount\": 0,\n            \"line_total_with_discount\": 11946,\n            \"line_total_with_discount_incl_tax\": 11946,\n            \"errors\": {}\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "https://demo.evershop.io/api/cart/130f241b-60e9-42ee-87e0-c3b8822d13c1/items/95b6793f-416b-4c2c-a851-80371b1ecd58",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/130f241b-60e9-42ee-87e0-c3b8822d13c1/items/95b6793f-416b-4c2c-a851-80371b1ecd58",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"130f241b-60e9-42ee-87e0-c3b8822d13c1",
+						"items",
+						"95b6793f-416b-4c2c-a851-80371b1ecd58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://demo.evershop.io/cart?ajax=true",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/cart?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://demo.evershop.io/cart?ajax=true",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/cart?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://demo.evershop.io/api/cart/f8bf88cf-3a24-4054-9ec8-cd2889f9b99d/items/a649ab8b-372e-41f1-b7ae-011a5cd66f5f",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"qty\": 2,\r\n    \"action\": \"increase\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/f8bf88cf-3a24-4054-9ec8-cd2889f9b99d/items/a649ab8b-372e-41f1-b7ae-011a5cd66f5f",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"f8bf88cf-3a24-4054-9ec8-cd2889f9b99d",
+						"items",
+						"a649ab8b-372e-41f1-b7ae-011a5cd66f5f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
